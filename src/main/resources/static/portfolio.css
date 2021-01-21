@@ -1,0 +1,293 @@
+/* all pages */
+
+* {
+  box-sizing: border-box;
+}
+body{
+	margin: 0px ;
+	background-color: #fafafa;
+}
+
+h1,
+h3,
+h4,
+p,
+.resume-list,
+.contact {
+	font-family: 'Roboto', sans-serif;
+	min-width: 200px;
+}
+
+a, a:active, a:visited {
+		color: #cccccc;
+}
+.port-link, .port-link:active, .port-link:visited {
+		color: #951d3b;
+}
+.container{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+img{
+	border-radius: 10px;
+	object-fit: cover;
+}
+	
+/* navbar */
+.navbar-brand {
+	font-family: 'Tangerine', cursive;
+	color: #99994d !important;
+	font-size: 36px;	
+}
+.about{
+	color: #756ab4 !important;
+	font-family: 'Roboto', sans-serif;
+}
+.resume{
+	color: #02a196 !important;
+	font-family: 'Roboto', sans-serif;
+}
+.portfolio{
+	color: #dd5577 !important; 
+	font-family: 'Roboto', sans-serif;
+}
+.linkedin{
+	color: #EAC435  !important;
+	font-family: 'Roboto', sans-serif;
+}
+.contactnav{
+	color: #08b3f7 !important;
+	font-family: 'Roboto', sans-serif;
+}
+.bg-light{
+	background-color: #fafafa !important;
+}
+
+/* home page */
+
+.fadeInDown{	
+	color: white;
+	display: block;
+	font-family: 'Tangerine', cursive;
+	line-height: 58px;
+	text-align: center;
+	position: absolute;
+	top: 38%;
+	left: 5%;
+	font-size: 68px;
+	opacity: 0.8;
+}
+
+h2{
+	color: green;
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 48px;
+} 
+
+.jumbotron-fluid {
+	background-image: url("./images/kassheadshot.jpg");
+	padding: 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	margin-top: 0px;
+	background-attachment: fixed;
+	background-position:  center -100px;
+	height: 275px;
+}
+@media screen and (max-width: 892px) {
+	.jumbotron-fluid {
+		background-position: center -50px;
+	}
+	.fadeInDown {
+		font-size: 58px;
+
+	}
+}
+@media screen and (max-width: 768px) {
+	.fadeInDown {
+		position: absolute;
+		top: 10%;
+		font-size: 40px;
+	}
+}
+#summary {
+	color: green;
+	background-color: #eeeedd;
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+	padding: 15px;
+	font-size: 48px;
+	font-family: 'Tangerine', cursive;
+	margin-right: 0px;
+}
+
+.home{
+	background-color: #fafafa;
+	color: #008000;
+	border-radius: 10px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* about page */
+.about-header{
+	color: #756ab4;
+	font-family: 'Tangerine', cursive;
+	font-size: 56px;
+	font-family: 'Tangerine', cursive;
+	text-align: right;	
+}
+.purple{
+	background-color:  #756ab4;
+	color: #fafafa;
+	border-radius: 10px;
+	padding: 25px;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	text-align: left;
+}
+
+.free-img {
+	width: 100%;
+	border-radius: 10px;
+	
+}
+@media screen and (max-width: 992px) {
+	.free-img {
+		margin-bottom: 25px;
+		width: 100%;
+	}
+	.purple {
+		margin-left: 0px;
+	}
+
+}
+
+/* resume */
+.section {
+	color: #017971;
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+	padding: 15px;
+	font-size: 48px;
+}
+.teal{
+	background-color: #02a196;
+	color: #fafafa;
+	border-radius: 10px;
+	padding: 25px 65px;
+	margin: 15px 0px;
+	font-family: 'Roboto', sans-serif;
+}
+.company,
+.title,
+.resume-list{
+	min-width: 200px;
+	text-align: left;
+}
+.resume-list {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.company {
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+.title{
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+.resume-list {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 15%;
+	margin-bottom: 0px;
+	list-style-type: circle;
+}
+.resume-row {
+	border-top-width: thin;
+	color: #02a196;
+	border-top-style: solid;
+	padding-top: 10px;
+}
+
+.resume-header{
+	color: #017971;
+	font-size: 56px;
+	font-family: 'Tangerine', cursive;
+	text-align: right;
+}
+
+/* portfolio */
+
+.red{
+	border: #dd5577;
+	border-style: solid;
+	border-width: medium;
+	background-color: #f5f5f5;	
+	color: #dd5577;
+	border-radius: 10px;
+	padding: 25px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-header {
+	color: #dd5577;
+	font-size: 56px;
+	font-family: 'Tangerine', cursive;
+	text-align: right;
+}
+.port-row {
+	margin-top: 25px;
+}
+.card-img {
+	width: 100%;
+	border-radius: 10px;
+	border-style: solid;
+	border-size: thick;
+	border-color: white;
+
+}
+.portfolio-text {
+
+	text-align: left;
+}
+.proj-title {
+	padding-bottom: 5px;
+	font-size: 28px;
+	text-align: left;
+}
+.top-link {
+	margin-top: 5px;
+}
+/* contact */
+.contact-header {
+	color: #08b3f7;
+	font-size: 56px;
+	font-family: 'Tangerine', cursive;
+	text-align: right;
+}
+
+.turquoise {
+	background-color: #08b3f7;
+	color: #fafafa;
+	border-radius: 10px;
+	padding: 25px;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	padding-top: 10%;
+	font-size: 22px;
+	padding-bottom: 10%;
+}
+
+@media screen and (max-width: 992px) {
+
+	.turquoise {
+		margin-bottom: 25px;
+	}
+
+}

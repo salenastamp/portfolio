@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="fragments/styling">
+<title>Recipe Box</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div ></div>
+  </head>
+  <body>
+<div th:replace="fragments/navbar"></div>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+	  <h1>Recipe successfully shared!</h1>
+	<div class="panel-footer">
+	  <!-- Link to Update -->
+	  <!-- Link to Show  -->
+	  <!--  Link to Destroy -->
+	  <a th:href="@{/recipes}"><button class="btn btn-success">Back To Home Page</button></a>
+	  <a th:href="@{/recipes/new}"><button class="btn btn-primary">Submit another Recipe</button></a>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div th:replace="fragments/footfragment"></div>
+  </body>
+</html>

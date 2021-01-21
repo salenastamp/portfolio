@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Recipe Box</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div th:replace="fragments/styling"></div>
+</head>
+<body>
+	<div th:replace="fragments/navbar"></div>
+	<div class="container">
+		<h2>An online collection of favorite recipes</h2>
+
+		<div class="row">
+			<div th:each="blog:${posts}">
+				<div class="col-md-12">
+					<div class="card">
+  						<div class="card-header">
+							<h3 th:text="${blog.title}"></h3>
+						</div>
+						<div class="card-body">
+						<strong><p>Submitted by:</p></strong>
+							<p th:text="${blog.author}" />
+							<a class="recipelink" th:href="${blog.link}">Recipe Link</a>
+							<strong><p> Description:</p></strong>
+							<p th:text="${blog.blogEntry}" />
+						</div>
+							<div class="card-footer">
+								<a href="#" th:href="@{recipes/{id}(id=${blog.id})}">
+									<button class="btn btn-success">Edit Recipe</button>
+								</a> 
+								<a href="#" th:href="@{recipes/delete/{id}(id=${blog.id})}">
+									<button class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')">Delete Recipe</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div th:replace="fragments/footfragment"></div>
+	</div>
+</body>	
+</html>

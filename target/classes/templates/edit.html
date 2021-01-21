@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+<title>Recipe Box</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div th:replace="fragments/styling"></div>
+  </head>
+<body>
+<div th:replace="fragments/navbar"></div>
+	<div class="container">
+		<h1>Edit Your Post</h1>
+		
+		<form action="#"
+			th:action="@{~/recipes/update/{id}(id=${blogPost.id})}"
+			th:object="${blogPost}" method="POST">
+			<label for="blogTitle">Recipe Name:</label>
+				<input type="text" class="form-control" name="blogTitle" th:field="*{title}" /> 
+			<label for="blogAuthor">Author:</label>
+				<input type="text" class="form-control" name="blogAuthor" th:field="*{author}" /> 
+			<label for="bloglink">Recipe Link:</label>
+				<input type="text" class="form-control" name="bloglink" th:field="*{link}"/>
+			<label for="blogEntry">Description:</label> 
+				<input type="text" class="form-control" name="blogEntry" th:field="*{blogEntry}" /><br>
+			<button type="submit" class="btn btn-success">Submit Your
+				Recipe</button>
+		</form>
+	</div>
+	<div th:replace="fragments/footfragment"></div>
+</body>
+</html>	
